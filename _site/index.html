@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>abeering</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/glitch-canvas.js"></script>
+    <script type="text/javascript" src="javascripts/autoglitch.js"></script>
+  </head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <h3>Ongoing</h3>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="images/projects/champinsight.png" alt="">
+        </a>
+        <h3>
+          <a href="#">ChampInsight.com</a>
+        </h3>
+        <p>A League of Legends learning tool. Used to track progression in key metrics over time in order to develop some insight into strengths and weaknesses. Soon to be open source.  Rails, Bootstrap, jQuery, flot.js. </p>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <h3>Recent</h3>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="images/projects/react2it.png" alt="">
+        </a>
+        <h3>
+          <a href="#">react2it</a>
+        </h3>
+        <p>A chrome application for rapidly creating reaction GIFs using your webcam. A popup prompts you for three seconds before taking a two-second video, converting to GIF and uploading to imgur. Puts url in your clipboard.</p>
+      </div>
+
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="images/projects/squill.png" alt="">
+        </a>
+        <h3>
+          <a href="#">squill</a>
+        </h3>
+        <p>A very lightweight tool for storing, searching and executing ad-hoc SQL. Written as a gem using the thor toolkit.</p>
+      </div>
+
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive autoglitch" src="images/projects/autoglitch-desert.png" alt=""
+          data-maxiterations=10 >
+        </a>
+        <h3>
+          <a href="#">autoglitch</a>
+        </h3>
+        <p>A quirk of JPEG code is that they will render even if you manually corrupt the bytes. Leveraging glitch-canvas, this library adds animation to glitching and allows you to quickly apply to any images on a page.</p>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <h3>Older</h3>
+    </div>
+
+    <div class="row">
+
+
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="images/projects/pgemcee.png" alt="">
+        </a>
+        <h3>
+          <a href="#">pgemcee</a>
+        </h3>
+        <p>A postgres-backed key/value store written in nodejs which speaks memcache. Written when people were saying "nosql" and not "no! sql!". Ahead of its time.. behind the times.. oh pgemcee I still love you. (ur bad)</p>
+      </div>
+
+      <div class="col-md-4 portfolio-item">
+        <a href="#">
+          <img class="img-responsive" src="images/projects/mtgotech.png" alt="">
+        </a>
+        <h3>
+          <a href="#">MTGOtech.com</a>
+        </h3>
+        <p>Another game learning site. This tracked tournaments on Magic the Gathering Online and reported on card usage.  Was very popular for a while but couldn't maintain it. Those Wizards of the Coast guys release a LOT of cards.</p>
+      </div>
+      
+    </div>
+
+
+  </div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  autoglitch.init();
+});
+</script>
+
+</body>
+
+</html>

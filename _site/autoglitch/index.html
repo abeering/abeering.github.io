@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Autoglitch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/autoglitch-example.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/autoglitch-example.js"></script>
+    <script type="text/javascript" src="javascripts/glitch-canvas.js"></script>
+    <script type="text/javascript" src="javascripts/autoglitch.js"></script>
+  </head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-md-4">
+
+          <div class="form-group-sm">
+            <h4>Select a new image</h4>
+            <input type="file" id="image-upload" />
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="form-group-sm">
+            <h4>Delay</h4>
+            <p class="help-block">The amount of time between updates in milliseconds.</p>
+            <div class="form-group form-inline">
+              <label for="min-delay">Min</label>
+              <input type="number" class="form-control option-value" data-option-name="mindelay" placeholder="50">
+              <label for="max-delay">Max</label>
+              <input type="number" class="form-control option-value" data-option-name="maxdelay" placeholder="1000">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="form-group-sm">
+            <h4>Amount</h4>
+            <p class="help-block">Impacts how much the image bytes will be corrupted.</p>
+            <div class="form-group form-inline">
+              <label for="min-amount">Min</label>
+              <input type="number" class="form-control option-value validate" data-option-name="minamount" placeholder="0">
+              <label for="max-amount">Max</label>
+              <input type="number" class="form-control option-value validate" data-option-name="maxamount" placeholder="99">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+
+          <div class="form-group-sm">
+            <h4>Seed</h4>
+            <p class="help-block">Impacts which pixels will be glitched.</p>
+            <div class="form-group form-inline">
+              <label for="min-seed">Min</label>
+              <input type="number" class="form-control option-value validate" data-option-name="minseed" placeholder="0">
+              <label for="max-seed">Max</label>
+              <input type="number" class="form-control option-value validate" data-option-name="maxseed" placeholder="99">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="form-group-sm">
+            <h4>Quality</h4>
+            <p class="help-block">The quality of the image read from canvas.</p>
+            <div class="form-group form-inline">
+              <label for="min-seed">Min</label>
+              <input type="number" class="form-control option-value validate" data-option-name="minquality" placeholder="0">
+              <label for="max-seed">Max</label>
+              <input type="number" class="form-control option-value validate" data-option-name="maxquality" placeholder="99">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="form-group-sm">
+            <h4>Iterations</h4>
+            <p class="help-block">The number of times the corruption will be ran.</p>
+            <div class="form-group form-inline">
+              <label for="min-iterations">Min</label>
+              <input type="number" class="form-control option-value validate" data-option-name="miniterations" placeholder="0">
+              <label for="max-iterations">Max</label>
+              <input type="number" class="form-control option-value validate" data-option-name="maxiterations" placeholder="99">
+            </div>
+          </div>
+
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-default btn-lg update-button">Update Image</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <pre class="image-tag">&lt;img src="foo.jpg" class="autoglitch" /&gt;</pre>
+        </div>
+      </div>
+    </form>
+
+
+    <div class="row">
+      <div class="col-md-12 text-center image-bucket">
+        <img class="autoglitch" src="images/laundrosaur.png" />
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+window.onload = function(){
+  autoglitch.init();
+}
+</script>
+
+</body>
+
+</html>
