@@ -1,3 +1,23 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.andy-header {
+  margin-top: 25px;
+}
+
+.portfolio-header-item {
+  margin-top: 25px;
+}
+
+.portfolio-item {
+  margin-top:75px;
+}
+
+.portfolio-snapshot {
+  border: 2px solid #ccc;
+  padding: 10px;
 }
